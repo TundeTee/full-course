@@ -39,7 +39,7 @@ const handleDeleteProduct = async(pid) =>{
   }
 };
 const handleUpdateProduct = async (pid, updatedProduct) => {
-    const {success,message} = await updateProduct(pid, updatedProduct);
+    const {success} = await updateProduct(pid, updatedProduct);
     onClose();
      if(!success){
     toast({
@@ -76,7 +76,7 @@ const handleUpdateProduct = async (pid, updatedProduct) => {
 </Text>
 <HStack spacing={2}>
  <IconButton icon={<EditIcon />} onClick={onOpen} colorScheme='blue'/>
-<IconButton icon={<DeleteIcon />} onClick={() => handleDeleteProduct(product._id)}/>
+<IconButton icon={<DeleteIcon />} onClick={() => handleDeleteProduct(product._id)} colorScheme='red'/>
 </HStack>
 </Box>
 <Modal isOpen={isOpen} onClose={onClose}>
