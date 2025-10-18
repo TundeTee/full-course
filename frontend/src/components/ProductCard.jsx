@@ -102,7 +102,7 @@ const handleUpdateProduct = async (pid, updatedProduct) => {
     placeholder='Image URL'
     name ='image'
     value={updatedProduct.image}
-     onChange={(e) => setUpdateProduct({...updatedProduct, imagr: e.target.value})}
+     onChange={(e) => setUpdateProduct({...updatedProduct, image: e.target.value})}
    />
 </VStack>
     </ModalBody>

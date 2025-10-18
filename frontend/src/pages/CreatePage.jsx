@@ -63,7 +63,7 @@ const CreatePage = () => {
     />
     <Button colorScheme='blue' onClick= {handleAddProduct}  w='full'>Add Product</Button>
 
-     <Button colorScheme='green.400'  w='full'> <Link to={"/"}>Show Added Product</Link></Button>
+     <Button colorScheme='green'  w='full'> <Link to={"/"}>Show Added Product</Link></Button>
 
 </VStack>
 </Box>
