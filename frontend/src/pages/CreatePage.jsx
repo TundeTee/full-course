@@ -57,7 +57,9 @@ const CreatePage = () => {
     value= {newProduct.image}
     onChange={(e) => setNewProduct({...newProduct, image: e.target.value})}
     />
-    <Button onClick= {handleAddProduct}  className='btn'>Add Product</Button>
+    <Button onClick= {handleAddProduct}  w='full'>Add Product</Button>
+
+     <Button  w='full'> <Link to={"/"}>Show Added Product</Link></Button>
 
 </VStack>
 </Box>
