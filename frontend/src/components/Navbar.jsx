@@ -7,7 +7,7 @@ import { LuSun } from "react-icons/lu";
 const Navbar = () => {
 const { colorMode, toggleColorMode} = useColorMode();
   return (
-    <Container maxW={"1140px"} px={4} mt={300} >
+    <Container maxW={"1140px"} px={4} mt={5} pt='20' >
     <Flex h={16}
     alignItems={"center"}
    justifyContent={"space-between"}
