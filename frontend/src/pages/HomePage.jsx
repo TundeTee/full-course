@@ -9,6 +9,8 @@ const {fetchProducts,products} = useProductStore();
 useEffect(() =>{
 fetchProducts();
 }, [fetchProducts]);
+ useEffect(() => {
+        document.title = 'HomePage'; }, []);
   return (
    <Container maxW= 'container.xl' py={12}>
 <VStack spacing={8}>
