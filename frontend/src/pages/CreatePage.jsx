@@ -54,6 +54,7 @@ const CreatePage = () => {
     <Input 
     placeholder='Image URL'
     name ='image'
+    type='file'
     value= {newProduct.image}
     onChange={(e) => setNewProduct({...newProduct, image: e.target.value})}
     />
