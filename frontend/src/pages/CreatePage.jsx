@@ -3,7 +3,7 @@ import{Box,Container,Heading,VStack,Button,Input,useColorModeValue} from '@chakr
 import { Link } from 'react-router-dom';
 import { useToast } from '@chakra-ui/react'
 import { useProductStore } from '../store/product';
- import React, { useEffect } from 'react';
+ import { useEffect } from 'react';
 
 const CreatePage = () => {
      const toast = useToast()
@@ -61,9 +61,9 @@ const CreatePage = () => {
     value= {newProduct.image}
     onChange={(e) => setNewProduct({...newProduct, image: e.target.value})}
     />
-    <Button onClick= {handleAddProduct}  w='full'>Add Product</Button>
+    <Button colorScheme='blue' onClick= {handleAddProduct}  w='full'>Add Product</Button>
 
-     <Button  w='full'> <Link to={"/"}>Show Added Product</Link></Button>
+     <Button colorScheme='cyan.400'  w='full'> <Link to={"/"}>Show Added Product</Link></Button>
 
 </VStack>
 </Box>
